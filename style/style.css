@@ -31,7 +31,7 @@
   letter-spacing: 0.5px;
 }
 .title-md {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   line-height: 150%;
 }
 .title-sm {
@@ -314,7 +314,6 @@ main {
 }
 .our-team-title {
   margin: 1rem 0;
-  font-size: 3rem !important;
 }
 .our-team-title p {
   margin: 1rem 0;
@@ -411,6 +410,8 @@ main {
   flex-direction: column;
   background-color: #ffffff;
   align-items: flex-start;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.34);
 }
 .card-header {
   padding: var(--normal-padding);
@@ -497,20 +498,25 @@ main {
 #event {
   padding: var(--normal-padding);
 }
+#event h2 {
+  font-size: 2.2rem;
+}
 .event-cards {
   margin: var(--normal-margin);
   row-gap: 1.5rem;
   flex-direction: column;
 }
 .event-card {
-  /* outline: 1px solid red; */
   overflow: hidden;
   border-radius: 0.5rem;
   flex-direction: column;
   width: 20rem;
   /* transform: scale(0.9); */
   background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.34);
 }
+
 .event-card-titles {
   padding: var(--normal-padding);
   align-items: flex-start;
