@@ -227,7 +227,8 @@ nav {
   left: 0;
   z-index: -20;
   border-radius: 7rem 7rem 0 0;
-  background-color: cyan;
+  /* background-color: cyan; */
+  background-color: #f56a00;
 }
 .nav-link:hover {
   color: var(--drk-clr);
@@ -686,7 +687,7 @@ footer {
     left: 0;
     z-index: -20;
     border-radius: 7rem 7rem 0 0;
-    background-color: #009393;
+    background-color: #f56a00;
   }
   .our-teams {
     text-align: left;
