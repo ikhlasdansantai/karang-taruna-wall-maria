@@ -558,6 +558,8 @@ main {
 }
 /* *FOOTER */
 footer {
+  position: relative;
+  overflow: hidden;
   /* padding: 3rem 6rem; */
   padding: 3rem 0;
   background-color: var(--drk-clr);
