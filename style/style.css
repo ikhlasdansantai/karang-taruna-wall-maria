@@ -188,6 +188,7 @@ nav {
   text-align: center;
   /* background-color: #0d6efd; */
   z-index: -3;
+  position: relative;
 }
 .header-content-titles h1 {
   margin: 0 0 0.5rem 0;
@@ -236,7 +237,7 @@ nav {
         */
 main {
   padding: 5rem 0;
-  background-color: #f5f5f5;
+  position: relative;
 }
 #our-activity {
   text-align: center;
@@ -304,8 +305,11 @@ main {
           */
 #our-team {
   text-align: center;
+  padding: 3.5rem 1.5rem;
+  background-color: #f5f5f5;
+}
+.our-teams {
   flex-direction: column;
-  padding: var(--normal-padding);
 }
 .our-team-title {
   margin: 1rem 0;
@@ -322,7 +326,9 @@ main {
 }
 :is(.our-team-card-titles p, .our-team-titles p) {
   margin-top: 1rem;
-  color: #333;
+}
+.our-team-card-titles p {
+  font-weight: bold;
 }
 .our-team-cards {
   overflow-y: auto;
@@ -345,18 +351,18 @@ main {
   padding: 1rem 1rem 1rem 1rem;
   flex-direction: column;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
+  background-color: #ffffff;
   transform: scale(0.9);
 }
 .our-team-card-img-wrapper {
   width: 100%;
   border-radius: 1rem;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
   position: relative;
 }
 .our-team-card-titles {
-  padding: 2rem;
+  padding: 2rem 0.5rem;
 }
 .our-team-card-titles h5 {
   letter-spacing: 3px;
@@ -680,7 +686,7 @@ footer {
     border-radius: 7rem 7rem 0 0;
     background-color: #009393;
   }
-  #our-team {
+  .our-teams {
     text-align: left;
     justify-content: space-between !important;
     align-items: flex-start;
@@ -706,12 +712,14 @@ footer {
 @media (min-width: 992px) {
   .container-all,
   main,
+  #our-team,
   footer {
     display: grid;
     grid-template-columns:
       minmax(1rem, 1fr)
       repeat(2, minmax(25rem, 40rem))
       minmax(1rem, 1fr);
+    justify-content: space-between !important;
   }
   header {
     grid-column: 2 / 4;
@@ -734,7 +742,13 @@ footer {
     grid-column: 1 / 5;
     padding: 3rem 0;
   }
-  :is(#our-activity, #our-team, #news, #event) {
+  .our-teams {
+    grid-column: 2 / 4;
+  }
+  #our-team {
+    grid-column: 1 / 5;
+  }
+  :is(#our-activity, #news, #event) {
     grid-column: 2 / 4;
   }
   footer {
