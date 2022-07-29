@@ -17,7 +17,7 @@
 .paragraph-text {
   font-size: 1rem;
   letter-spacing: 0.35px;
-  font-weight: lighter;
+  font-weight: bold;
   color: var(--grey-clr);
 }
 .flex-row {
